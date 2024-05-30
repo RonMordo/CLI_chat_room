@@ -1,5 +1,6 @@
 import threading
 import os
+import socket
 # def simple(x, y, z):
 #     print(f"Answer = {x + y + z}.")
 
@@ -41,6 +42,3 @@ import os
 # 	t2.join()
 #-----------------------------------------------------------------------------------------------
 
-name = 'ron'
-age = 12
-print("His name is:{}, and his age is {}".format(name, age))

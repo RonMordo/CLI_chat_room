@@ -34,11 +34,17 @@ def receive():
                 msg_length = int(msg_length)
                 msg = client.recv(msg_length).decode(FORMAT)
                 print(f"[SERVER]: {msg}")
+                if msg == DISCONNECT_MESSAGE:
+                    print("You are disconnected from the server.")
+                    client.close()
+                    break
         except ConnectionResetError:
             print("Connection lost.")
+            client.close()
             break
         except Exception as e:
             print(f"Error receiving data from server: {e}")
+            client.close()
             break
 
 

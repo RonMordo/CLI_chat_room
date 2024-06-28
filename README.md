@@ -9,6 +9,10 @@ Welcome to the CLI Chat Room project! This project demonstrates a simple chat ap
 - Send and receive messages in real-time
 - Leave chat rooms
 
+## Install
+
+-In order to start chatting in your local network, please run the server script using python interpreter, when the server is running you can run the client script and start using the chat app from any computer in the network!
+
 ## Technologies Used
 
 - Python
